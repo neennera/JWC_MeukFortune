@@ -1,43 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
+<head>
+    <title>MeukFortune</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!--CSS extension-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bai Jamjuree">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra Petch">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+            } else {
+            reveals[i].classList.remove("active");
+            }
+        }
+        }
+
+        window.addEventListener("scroll", reveal);
+    </script>
+</head>
+
+<body class="body" style=" font-family : Bai Jamjuree, Chakra Petch;">
+    <div class="nav-bar">
+        <nav>
+            <ul class="nav nav-pills justify-content-end py-3">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">เกี่ยวกับหมอหมึก</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/blog">บทความ</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/queue">จองคิว</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container text-center" style="padding: 130px 0px 100px 0px;">
+        <h1 style="font-size: 70px;">หมอหมึก</h1><br>
+        <p style="font-size: 30px;">ผู้มีประสบการณ์การพยากรณ์กว่า 10 ปี พร้อมคำพยากรณ์ที่แม่นยำ </p><br><br>
+        <a href="/queue"><button type="button" class="btn btn-light" style="padding: 10px 50px 10px 50px; font-size: 22px;">จองคิว</button></a>
+    </div>
+
+    <div class="container py-7 text-center reveal" style="margin-bottom: 100px;">
+        <div class="row">
+            <div class="column" style="padding: 70px;">
+                <h2 class="py-2">ประวัติหมอหมึก</h2>
+                <p class="py-2">หมอหมึกเป็นนักพยากรณ์ที่ชํานาญด้านการทํานายดวง<br>ด้วยลูกแก้วพยากรณ์ไพ่ทาโรและการดูลายมือ</p>
+                <p class="py-2">ด้วยความสามารถที่หลากหลาย ทําให้หมอหมึกสามารถ<br>เลือกวิธีการทํานายที่เหมาะกับแต่ละ บุคคลเพื่อให้ได้ผลลัพธ์แม่นยําที่สุด</p>
+            </div>
+
+            <div class="column">
+                <img height=350px src="sourse\fortune.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 text-center reveal">
+        <div class="row"><h2 class="py-2">รีวิวจากลูกค้า</h2></div>
+        <div class="row py-2">
+            <div class="column-3 align-items-center">
+                <img src="sourse\Mathew.webp" alt="Mathew" style="border-radius: 50%;"><br><br>
+                <h4>แมทธิว นักธุรกิจ</h4>
+                <p>หมอหมึกช่วยผมเรื่องฤกษ์ยามใน การเจรจาธุรกิจได้มากเลย ตอนนี้ขายดีเทน้ําเทท่าเลยครับ</p>
+            </div>
+            <div class="column-3 align-items-center">
+                <img src="sourse\jack.webp" alt="Jack" style="border-radius: 50%;"><br><br>
+                <h4>แจ็ค นักแสดง</h4>
+                <p>ต้องขอบคุณหมอหมึกในการช่วยให้ความ สัมพันธ์ราบรื่นด้วยนะคะ ทํานายอะไรไว้ก็แม่นทุกอย่างเลยค่ะ</p>
+            </div>
+            <div class="column-3 align-items-center">
+                <img src="sourse\fahsai.webp" alt="Fahsai" style="border-radius: 50%;"><br><br>
+                <h4>น้ําใส นักศึกษา</h4>
+                <p>ที่หมอหมึกบอกมานะคะเกิดเกือบหมดเลยค่ะ ถ้าไม่ได้หมอหมึกช่วยไว้ ชีวิตคงแย่เลยค่ะ ดีนะที่ป้องกันเรื่องร้าย ๆ ทันเวลา</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 text-center reveal">
+        <div class="row">
+            <div class="column">
+                <iframe
+                width=80% height="450" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7751.668936770332!2d100.77237747443135!3d13.72846966145015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d664988a1bedf%3A0xcc678f180e221cd0!2z4Liq4LiW4Liy4Lia4Lix4LiZ4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4LmA4LiI4LmJ4Liy4LiE4Li44LiT4LiX4Lir4Liy4Lij4Lil4Liy4LiU4LiB4Lij4Liw4Lia4Lix4LiH!5e0!3m2!1sth!2sth!4v1655200095099!5m2!1sth!2sth"></iframe>
+            </div>
+
+            <div class="column px-4" style="text-align: left;">
+                <h2 class="py-2">ทํานายชะตากับหมอหมึก</h2>
+                <p>
+                    สามารถจองคิวได้ในเว็บหรือ<br>
+                    Olva: octopus_fortune@teller.com<br>
+                    โทรศัพท์: 099XXXXXXX<br>
+                    และมาที่สํานักที่<br>
+                    ชั้น 12 อาคาร JWC ถนนโปรแกรมมิ่ง แขวงเว็บ<br>
+                    เขตอินเตอร์เน็ต กรุงเทพ 99999<br>
+                    ตามวันเวลาที่นัดไว้
+                </p>
+                <br><br
+                <p>
+                    จํากัดที่ 10 คิวต่อหนึ่งวัน เปิดทําการ <br>
+                    0.00 - 18.30 น. พัก 12.00 - 13.00 <br>
+                    เปิดทุกวันอังคารถึงเสาร์ หยุดวันจันทร์และอาทิตย์
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container align-items-center">
+        <hr><br>
+        <center>
+            <p>จัดทำโดย นางสาวณภัทร เสรีรักษ์(2022)</p><br>
+        </center>
+    </div>
+</body>
 </html>
