@@ -22,7 +22,7 @@ function App2() {
   );
 }
 
-function App2() {
+function App() {
   <html>
 <head>
     <title>MeukFortune</title>
