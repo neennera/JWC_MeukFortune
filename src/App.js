@@ -10,9 +10,10 @@ import Light from './light';
 function App() {
   return (
       <>
-            <Nav/>
-            <Infom/>
-            <Map/>
+        <div className="twinkling"></div>
+        <Nav/>
+        <Infom/>
+        <Map/>
         
       </>
   );
