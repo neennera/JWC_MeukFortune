@@ -1,35 +1,20 @@
 import React from 'react';
 import './index.css';
+import './style.css';
+
 import Infom from './Infom';
+import Map from './Map';
+import Nav from './Nav';
+import Light from './light';
 
 function App() {
   return (
-    <div>
-      
-
-        <div class="nav-bar">
-          <nav>
-              <ul class="nav nav-pills justify-content-end py-3">
-                  <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/home">เกี่ยวกับหมอหมึก</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="/blog">บทความ</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="/queue">จองคิว</a>
-                  </li>
-              </ul>
-          </nav>
+      <>
+            <Nav/>
+            <Infom/>
+            <Map/>
         
-        </div>
-        
-        <>
-        <Infom/>
-        </>
-    </div>
-
-    
+      </>
   );
 } 
 

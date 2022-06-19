@@ -17,7 +17,7 @@
         for (var i = 0; i < reveals.length; i++) {
             var windowHeight = window.innerHeight;
             var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
+            var elementVisible = 250;
 
             if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
@@ -29,9 +29,12 @@
 
         window.addEventListener("scroll", reveal);
     </script>
+
+    <script>
+    </script>
 </head>
 
-<body class="body" style=" font-family : Bai Jamjuree, Chakra Petch;">
+<body class="body background" style=" font-family : Bai Jamjuree, Chakra Petch;">
     <div class="nav-bar">
         <nav>
             <ul class="nav nav-pills justify-content-end py-3">
