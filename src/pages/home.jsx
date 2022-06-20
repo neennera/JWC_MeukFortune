@@ -7,14 +7,13 @@ import Map from '../components/Map';
 import Nav from '../components/Nav';
 import Light from '../components/light';
 
-function App() {
+const App = () => {
   return (
       <>
         <div className="twinkling"></div>
         <Nav/>
         <Infom/>
-        <Map/>
-        
+        <Map/>   
       </>
   );
 } 
