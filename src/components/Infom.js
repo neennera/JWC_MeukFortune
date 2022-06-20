@@ -1,8 +1,8 @@
 import './style.css';
-import Fortune from '../src/source/fortune.jpg'
-import fahsai from '../src/source/fahsai.webp'
-import jack from '../src/source/jack.webp'
-import Mathew from '../src/source/Mathew.webp'
+import Fortune from '../source/fortune.jpg'
+import fahsai from '../source/fahsai.webp'
+import jack from '../source/jack.webp'
+import Mathew from '../source/Mathew.webp'
 
 const pad130={ marginBottom : "50px",  padding: "130px 0px 100px 0px" }
 const mar100={ marginBottom : "20px" }

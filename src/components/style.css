@@ -25,12 +25,12 @@
 }
 
 .stars {
-  background:rgb(62, 38, 62) url(../src/source/stars.png) repeat top center;
+  background:rgb(62, 38, 62) url(../source/stars.png) repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background:transparent url(../src/source/twinkling.png) repeat top center;
+  background:transparent url(../source/twinkling.png) repeat top center;
   z-index:-1;
   animation:move-twink-back 200s linear infinite;
   position: fixed;
@@ -39,7 +39,7 @@
 }
 
 .clouds{
-    background:transparent url(../src/source/clouds.png) repeat top center;
+    background:transparent url(../source/clouds.png) repeat top center;
     z-index:2;
     opacity: .4;
     animation:move-clouds-back 200s linear infinite;

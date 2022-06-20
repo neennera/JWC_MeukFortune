@@ -1,16 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import './style.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+// import {BrowserRouter as Router} from 'react-router-dom'
+import Routes from './Routes'
+{/*
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import './assets/js/app
+'''
+*/}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Routes />
   </React.StrictMode>,
   document.getElementById('root')
-);
-
-reportWebVitals(sendToVercelAnalytics);
+)
