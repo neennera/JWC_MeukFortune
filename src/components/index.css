@@ -8,11 +8,17 @@
   background-size: 100% 100%;
   font-size: 17px;
   color: white;
-
   font-family: "Krub", "Bai Jamjuree"
   , "Chakra Petch";
 }
 
+.container{
+  width : 80vw;
+  align-self: center;
+  padding : 2vw 2vw 2vw 2vw;
+  margin : 2vw auto 2vw auto;
+  background-color: rgba(14, 14, 14, 0.3);
+}
 
 .column {
   float: left;
