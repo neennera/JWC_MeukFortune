@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import PageNotFound from './pages/pagenotfound/PageNotFound'*/
 import Home from './pages/home'
 import Queue from './pages/queue'
+import Blog from './pages/blog'
 
 {/*
 const AppRoute = ({component: Component, layout: Layout, ...rest}) => (
@@ -17,15 +18,10 @@ const App = () => {
         <BrowserRouter>
 
             <Routes>
-
-                {/* Frontend 
-                <Route exact={true} path="/" component={Home} />
-                <Route exact path="/home" component={Home} />
-                <Route exact path="/queue" component={Queue} />*/}
-
                 <Route exact={true} path="/" element={<Home/>} />
                 <Route exact path="/home" element={<Home/>} />
                 <Route exact path="/queue" element={<Queue/>} />
+                <Route exact path="/blog" element={<Blog/>} />
             </Routes>
 
         </BrowserRouter>

@@ -1,6 +1,8 @@
 .body {
-  background-image:
+ /* background-image:
     url("https://media.istockphoto.com/photos/purple-defocused-blurred-motion-abstract-background-picture-id1273929462?k=20&m=1273929462&s=612x612&w=0&h=jJ0xkuDVJQMp6YwnAiqbtM8nwid36M97VIFxCP_sKCE=");
+    ;
+    */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -10,7 +12,6 @@
   font-family: "Krub", "Bai Jamjuree"
   , "Chakra Petch";
 }
-
 
 
 .column {
@@ -35,7 +36,7 @@
 
 
 .nav-item{
-  color: white;
+  color: rgb(228, 228, 228);
 }
 
 .nav-link active{
@@ -84,6 +85,14 @@
   border:0;
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
 /**/
 
 
