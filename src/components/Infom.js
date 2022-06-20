@@ -4,9 +4,7 @@ import fahsai from '../source/fahsai.webp'
 import jack from '../source/jack.webp'
 import Mathew from '../source/Mathew.webp'
 
-{/*const pad130={ marginBottom : "50px",  padding: "130px 0px 100px 0px" }
-const mar100={ marginBottom : "20px" }
-*/}
+
 const pad130={ marginBottom : "0px",}
 const mar100={ marginBottom : "0px" }
 const F70={fontSize: "70px"}

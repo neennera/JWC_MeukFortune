@@ -10,7 +10,6 @@ import Light from '../components/light';
 const App = () => {
   return (
       <>
-        <div className="twinkling"></div>
         <Nav/>      
       </>
   );
