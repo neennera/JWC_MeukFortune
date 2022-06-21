@@ -5,6 +5,7 @@ import '../components/style.css';
 import Infom from '../components/Infom';
 import Map from '../components/Map';
 import Nav from '../components/Nav';
+import Form from '../components/form';
 import Vi from '../source/Purple.mp4';
 import Show from '../components/showqueue';
 
@@ -15,6 +16,7 @@ const App = () => {
           <source src={Vi} type="video/mp4"/>
         </video>
         <Nav/>
+        <Form/>
         <Show/>
         <Map/>
       </>
