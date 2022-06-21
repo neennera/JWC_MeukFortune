@@ -2,16 +2,21 @@ import React from 'react';
 import '../components/index.css';
 import '../components/style.css';
 
-import Infom from '../components/Infom';
+import Blog from '../components/blog';
 import Map from '../components/Map';
 import Nav from '../components/Nav';
-import Light from '../components/light';
+import Vi from '../source/Purple.mp4';
 
 const App = () => {
   return (
       <>
-        <div className="twinkling"></div>
-        <Nav/> 
+        <video autoPlay muted loop id="myVideo">
+          <source src={Vi} type="video/mp4"/>
+        </video>
+        
+        <Nav/>
+        <Blog/>
+        <Map/>   
       </>
   );
 } 
