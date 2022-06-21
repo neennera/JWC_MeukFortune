@@ -8,7 +8,7 @@ function Infom(){
     return(
         <>
 
-        <div class="container py-5 text-center reveal">
+        <div class="container py-5 text-center">
         <div class="row"><h2 class="py-2">อ่านบทความของหมอหมึก</h2></div>
         <div class="row py-2">
             <div class="column-3 align-items-center">
