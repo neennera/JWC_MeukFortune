@@ -11,13 +11,13 @@ function Infom(){
         <div class="container py-5 text-center">
         <div class="row"><h2 class="py-2">อ่านบทความของหมอหมึก</h2></div>
         <div class="row py-2">
-            <div class="column-3 align-items-center">
+            <div class="column-3 align-items-center py-3">
                 <div classs="row">
                     <img src={Mathew} alt="Mathew" className="roundImage"/><br/><br/>
                     <h4>แมทธิว นักธุรกิจ</h4>
                     <p>หมอหมึกช่วยผมเรื่องฤกษ์ยามใน การเจรจาธุรกิจได้มากเลย ตอนนี้ขายดีเทน้ําเทท่าเลยครับ</p><br/>
                 </div>
-                <div class="row align-items-center">
+                <div class="row align-items-center py-3">
                 <center>
                         <button class="btn btn-primary button">
                         <span class="spinner-border spinner-border-sm"></span>
@@ -26,7 +26,7 @@ function Infom(){
                     </center>
                 </div>
             </div>
-            <div class="column-3 align-items-center">
+            <div class="column-3 align-items-center py-3">
             <div classs="row">
                 <img src={jack} alt="Jack" className="roundImage"/><br/><br/>
                 <h4>แจ็ค นักแสดง</h4>

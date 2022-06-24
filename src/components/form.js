@@ -1,8 +1,4 @@
 import './style.css';
-import Fortune from '../source/fortune.jpg'
-import fahsai from '../source/fahsai.webp'
-import jack from '../source/jack.webp'
-import Mathew from '../source/Mathew.webp'
 
 function Infom(){
     return(
@@ -18,7 +14,7 @@ function Infom(){
             <input type="time" class="form-control" id="time"/>
         </div>
         <div class="mb-3">
-            <label class="form-label">วันที่</label>
+            <label class="form-label">ชื่อ</label>
             <input type="text" class="form-control" id="name"/>
         </div>
         <center>

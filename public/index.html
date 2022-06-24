@@ -19,6 +19,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <style>
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 5px #fff, 0 0 7px #815ea2, 0 0 10px #815ea2, 0 0 10px #815ea2;
+        }
+        
+        to {
+          text-shadow: 0 0 10px #fff, 0 0 15px #3087a1, 0 0 10px #3087a1, 0 0 13px #3087a1 0 0 15px #3087a1;
+        }
+      }
+    </style>
     <script>
         function reveal() {
         var reveals = document.querySelectorAll(".reveal");
@@ -37,6 +48,17 @@
         }
 
         window.addEventListener("scroll", reveal);
+    </script>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
     </script>
 
   </head>

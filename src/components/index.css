@@ -1,8 +1,4 @@
 .body {
- /* background-image:
-    url("https://media.istockphoto.com/photos/purple-defocused-blurred-motion-abstract-background-picture-id1273929462?k=20&m=1273929462&s=612x612&w=0&h=jJ0xkuDVJQMp6YwnAiqbtM8nwid36M97VIFxCP_sKCE=");
-    ;
-    */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -44,7 +40,6 @@
   clear: both;
 }
 
-
 .nav-item{
   color: rgb(228, 228, 228);
 }
@@ -58,10 +53,15 @@
   border-width: 2px;
   border-color: white;
   background-color: white;  
+  font-family: "Krub", "Bai Jamjuree" , "Chakra Petch";
+}
+
+.nav .nav-pills .nav-item .nav-link{
+  background-color: red;
 }
 
 .picture{
-  height: 350px;
+  width: 60%;
 }
 
 .btn-light{
@@ -103,22 +103,15 @@
   min-height: 100%;
   z-index: -1;
 }
-/**/
 
-
-
-/*
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.BigText{
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+btn-light:hover{
+  padding: 15px 32px;
+  text-align: center;
 }
-*/
